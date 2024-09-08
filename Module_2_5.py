@@ -6,8 +6,9 @@ def get_matrix(n):
             print(matrrix.append([]))
         else:
             break
-            for m in range(m):
-                if
+    return matrrix.append([])
+            # for m in range(m):
+            #     if
 pass
 
 n = int(input())
