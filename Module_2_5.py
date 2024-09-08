@@ -7,6 +7,6 @@ def get_matrix(n):
             break
 pass
 
-n = int(input())
+n = int(input())))
 get_matrix(n)
 
