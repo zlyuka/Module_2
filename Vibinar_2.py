@@ -27,7 +27,17 @@ def filtred_emp(position):
 
 
 def add_emp(name, position, department):
-    pass
+    '''Добавление нового сотрудника'''
+    employees_extend = {"name": 1 , "position": 1, "department": 1}
+    employees_extend["name"] = name
+    employees_extend["position"] = position
+    employees_extend["department"] = department
+    return employees_extend
+
+
+
+
+
 
 
 def main():
@@ -60,7 +70,12 @@ def main():
                 print(f'Сотрудников с такой должностью нет')
 
         elif choice == '3':
-            pass
+            name = input('Введите имя сотрудника ')
+            position = input('Введите должность сотрудника ')
+            department = input('Введите отдел сотрудника ')
+            employees_extend = add_emp(name, position, department)
+            employees.append(employees_extend)
+            print()
 
         elif choice == '4':
             print('EXIT')
