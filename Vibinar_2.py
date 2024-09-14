@@ -75,7 +75,7 @@ def main():
             department = input('Введите отдел сотрудника ')
             employees_extend = add_emp(name, position, department)
             employees.append(employees_extend)
-            print()
+            print( )
 
         elif choice == '4':
             print('EXIT')
