@@ -32,7 +32,9 @@ def add_emp(name, position, department):
     employees_extend["name"] = name
     employees_extend["position"] = position
     employees_extend["department"] = department
+    print('Новый сотрудник добавлен')
     return employees_extend
+
 
 
 
@@ -70,9 +72,9 @@ def main():
                 print(f'Сотрудников с такой должностью нет')
 
         elif choice == '3':
-            name = input('Введите имя сотрудника ')
-            position = input('Введите должность сотрудника ')
-            department = input('Введите отдел сотрудника ')
+            name = input('Введите имя нового сотрудника ')
+            position = input('Введите должность нового сотрудника сотрудника ')
+            department = input('Введите отдел нового сотрудника ')
             employees_extend = add_emp(name, position, department)
             employees.append(employees_extend)
             print( )
